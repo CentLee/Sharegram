@@ -95,7 +95,8 @@ class SinglePostViewController: UIViewController { //PostId 만 받으면 다 �
             make.right.equalTo(self.view).offset(-10)
             make.centerY.equalTo(UserName)
         }
-        ExceptionBut.setImage(UIImage(named: "exception.png"), for: .normal)
+        //ExceptionBut.setImage(UIImage(named: "exception.png"), for: .normal)
+        ExceptionBut.isEnabled = false
         PostImage.snp.makeConstraints { (make) in
             make.width.equalTo(width)
             make.height.equalTo(height/2)
